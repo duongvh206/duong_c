@@ -18,8 +18,7 @@ int main()
         printf("a[%d]= ",i+1);
         scanf("%d",&a[i]);
     }
-    int k=sizeof(a)/sizeof(a[0]);
-    //printarray(a,k);
+    printarray(a,n-1);
     int min;
     for(int i=0;i<n-1;i++)
     {
@@ -32,7 +31,7 @@ int main()
             int temp=a[min];
             a[min]=a[j];
             a[j]=temp;
-            printarray(a,k);
+            printarray(a,n-1);
             printf("\n");
             
         }
